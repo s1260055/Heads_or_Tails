@@ -39,7 +39,12 @@ int main(){
   }
    printf("Heads:%d,Tails:%d\n",heads,tails);
 
-  
+   if(heads<tails) {
+     printf("You lose\n");
+   }
+   else{
+     printf("You won!\n");
+   }
 
   return 0;
 }
