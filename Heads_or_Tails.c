@@ -5,7 +5,11 @@
 int main(){
   int c1,c2,c3=0;
   int heads,tails=0;
+  char name[20];
 
+    printf("Who are you?\n> ");
+    scanf("%s",name);
+    printf("Hello, %s!\n",name);
 
   srand(time(NULL));
   c1 = rand() % 2 ;
@@ -39,12 +43,17 @@ int main(){
   }
    printf("Heads:%d,Tails:%d\n",heads,tails);
 
-   if(heads<tails) {
-     printf("You lose\n");
-   }
-   else{
-     printf("You won!\n");
-   }
+<<<<<<< HEAD
+if(heads<tails) {
+   printf("%s lost\n",name);
+ }
+ else{
+   printf("%s won!\n",name);
+ }
+
+=======
+
+>>>>>>> user_name
 
   return 0;
 }
