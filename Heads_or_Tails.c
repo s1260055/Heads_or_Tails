@@ -5,7 +5,11 @@
 int main(){
   int c1,c2,c3=0;
   int heads,tails=0;
+  char name[20];
 
+    printf("Who are you?\n> ");
+    scanf("%s",name);
+    printf("Hello, %s!\n",name);
 
   srand(time(NULL));
   c1 = rand() % 2 ;
@@ -39,7 +43,7 @@ int main(){
   }
    printf("Heads:%d,Tails:%d\n",heads,tails);
 
-  
+
 
   return 0;
 }
